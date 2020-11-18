@@ -71,3 +71,53 @@ console.log(a);
 const b = 'b';
 b = 'c';
 console.log(b);
+
+let name = 'Carlos';
+let age = 37;
+
+//es5
+obj = {name: name, age: age};
+
+//es6
+obj2 = {name, age};
+console.log(obj2);
+
+//Arrow functions
+const names = [
+    {name : 'Carlos', age: 37},
+    {name : 'Yesica', age: 27}
+]
+
+//es5
+let listOfNames = names.map(function (item){
+    console.log(item.name);
+})
+
+//es6
+let listOfNames2 = names.map(item => console.log(item.name));
+
+let listOfNames3 = (name, age) => {
+    console.log(item.name);
+};
+
+let listOfNames4 = name => {
+    console.log(item.name);
+};
+
+const square = num => num * num;
+
+//Promises
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true){
+            resolve('OK');
+        }else{
+            reject('KO');
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hola'))
+    .catch(error => console.log(error));
