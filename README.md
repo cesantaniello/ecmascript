@@ -1,3 +1,3 @@
-# Guía visual de implementaciones de ECMAScript
+# Visual guide for ECMAScript implementation
 
-De ES6 a ES10
+From ES6 to ES10
